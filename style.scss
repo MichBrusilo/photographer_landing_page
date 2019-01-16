@@ -1,7 +1,15 @@
 // out: ./css/style.css, compress: true, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
-$font-family-primary: Arial, Helvetica, sans-serif;
-
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$font-family-primary: Lato, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: $font-family-primary
+}
+ul {
+    list-style: none;
+    display: flex;
 }
 

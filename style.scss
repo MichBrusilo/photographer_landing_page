@@ -47,6 +47,29 @@ background-color: dimgrey;
     
 }
 }
+.carousel {
+    padding: 20px;
+    margin: 20px;
+}
+.carouselTwo {
+    width: 400;
+	height: 250;
+	border: 3px solid blue;
+	margin: 0 auto;
+	overflow: hidden;
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+.carousel img {
+	width: 400;
+	height: 250;
+}
+
+
 @media screen and (max-width: $break-large) {
     .menusection {
         flex-direction: column;

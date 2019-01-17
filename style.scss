@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 $font-family-primary: Lato, sans-serif;
 $break-large: 768px;
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +18,11 @@ body {
 }
 .menusection {
     display: flex;
+    background-color: darkslategray;
+    justify-content: space-around;
 }
 
 .logo {
-
     a {
     display: flex;
     justify-content: flex-start;
@@ -38,6 +46,8 @@ a {
     font-family: $font-family-primary;
     text-decoration: none;
     padding: 1.5rem;
+    white-space: nowrap;
+    line-height: 2.8;
     margin: 0.5rem;
     &:hover, 
     {
@@ -47,26 +57,19 @@ background-color: dimgrey;
     
 }
 }
-.carousel {
-    padding: 20px;
-    margin: 20px;
+.container {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/background1.jpg");
+    background-size: cover;
+a {
+    cursor: initial;
 }
-.carouselTwo {
-    width: 400;
-	height: 250;
-	border: 3px solid blue;
-	margin: 0 auto;
-	overflow: hidden;
-    ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
+img {
+    width: auto;
+    height: 80vh;
 }
-.carousel img {
-	width: 400;
-	height: 250;
 }
 
 

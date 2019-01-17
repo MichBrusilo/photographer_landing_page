@@ -18,7 +18,7 @@ body {
 }
 .menusection {
     display: flex;
-    background-color: darkslategray;
+    background-color:  #c6dada;
     justify-content: space-around;
 }
 
@@ -37,21 +37,25 @@ ul {
 }
 li {
     flex-basis: 100%;
+    
 }
 a {
     display: block;
     font-size: 1.5rem;
-    background-color: darkslategray;
-    color: azure;
+    background-color: #c6dada;
+    color: white;
     font-family: $font-family-primary;
     text-decoration: none;
     padding: 1.5rem;
     white-space: nowrap;
     line-height: 2.8;
+    transition: 0.5s;
     margin: 0.5rem;
     &:hover, 
     {
-background-color: dimgrey;
+color:  #0342b9;
+opacity: 0.5;
+
     }
     text-align: center;
     
@@ -63,15 +67,46 @@ background-color: dimgrey;
     align-items: center;
     background-image: url("../images/background1.jpg");
     background-size: cover;
+    box-shadow: inset 20px 14px 20px 20px #d3d3d345;
 a {
     cursor: initial;
 }
 img {
-    width: auto;
-    height: 80vh;
+    width: 80vw;
+    height: auto;
 }
 }
 
+.portfolio {
+    background-color: lightgray;
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: indianred;
+    padding: 20px;
+}
+}
+.flex-container {
+    @include flexbox();
+    -webkit-flex-flow: row no-wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    list-style-type: none;
+  }
 
 @media screen and (max-width: $break-large) {
     .menusection {

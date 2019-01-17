@@ -61,7 +61,7 @@ background-color: dimgrey;
     @include flexbox();
     justify-content: center;
     align-items: center;
-    background-image: url("..images/background1.jpg");
+    background-image: url(".images/background1.jpg");
     background-size: cover;
 a {
     cursor: initial;

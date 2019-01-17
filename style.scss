@@ -76,6 +76,23 @@ img {
     height: auto;
 }
 }
+.flex-text {
+    @include flexbox();
+    -webkit-flex-flow: row;
+    justify-content: center;
+    align-content: space-between;
+    padding: 40px;
+    margin: 10px;
+    height: 40vh;
+h1 {
+    text-transform: uppercase;
+    color: #7a6a82;
+    text-align: center;
+}
+p{
+    align-self: flex-end;
+}
+}
 
 .portfolio {
     background-color: lightgray;
@@ -85,27 +102,28 @@ h2 {
     color: indianred;
     padding: 20px;
 }
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+a {
+    transition: 0.5s;
+    &:hover,
+    {
+        opacity: 0.7;
+    }
+}
 }
 .flex-container {
     @include flexbox();
-    -webkit-flex-flow: row no-wrap;
+    -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .flex-item {
-    background: tomato;
-    padding: 5px;
+    padding: 15px;
     margin: 10px;
-    width: 300px;
-    height: 200px;
-    margin-top: 10px;
-    
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    list-style-type: none;
+    margin-top: 40px;
   }
 
 @media screen and (max-width: $break-large) {

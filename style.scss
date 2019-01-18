@@ -28,6 +28,10 @@ body {
     justify-content: flex-start;
     flex: 1;
     }
+    img {
+        border-radius: 50%;
+        cursor: initial;
+    }
 }
 nav{
     justify-content: flex-end;

@@ -87,8 +87,8 @@ img {
     align-content: space-between;
     padding: 40px;
     margin: 10px;
-    height: 40vh;
-h1 {
+    height: 80vh;
+h2 {
     text-transform: uppercase;
     color: #7a6a82;
     text-align: center;
@@ -98,12 +98,32 @@ p{
 }
 }
 
+
+.aboutme {
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #7a6a82;
+    padding: 20px;
+}
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+a {
+    cursor: initial;
+}
+img {
+    width: 60vh;
+    height: auto;
+}
+}
 .portfolio {
     background-color: lightgray;
 h2 {
     text-align: center;
     text-transform: uppercase;
-    color: indianred;
+    color: #7a6a82;
     padding: 20px;
 }
 li {
@@ -129,7 +149,15 @@ a {
     margin: 10px;
     margin-top: 40px;
   }
-
+.oferta {
+    height: 80vh;
+    margin: 40px;
+h2 {
+    color: #7a6a82;
+    text-transform: uppercase;
+    text-align: center;
+}
+}
 @media screen and (max-width: $break-large) {
     .menusection {
         flex-direction: column;

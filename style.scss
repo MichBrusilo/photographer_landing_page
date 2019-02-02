@@ -1,5 +1,6 @@
 // out: ./css/style.css, compress: true, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 /*RWD*/ 
 
 // Small tablets and large smartphones (landscape view)
@@ -57,6 +58,9 @@ $break-large: 768px;
 body {
     font-family: $font-family-primary
 }
+
+/* MENU */
+
 .menusection {
     display: flex;
     background-color:  #c6dada;
@@ -106,6 +110,8 @@ opacity: 0.5;
     
 }
 }
+/* BANNER */
+
 .container {
     @include flexbox();
     justify-content: center;
@@ -139,6 +145,7 @@ p{
 }
 }
 
+/* ABOUTME */
 
 .aboutme {
 h2 {
@@ -165,6 +172,9 @@ img {
     margin-top: 40px;
     justify-content: center;
   }
+
+/* PORTFOLIO */
+
 .portfolio {
     background-color: lightgray;
 h2 {
@@ -196,6 +206,9 @@ a {
     margin: 10px;
     margin-top: 40px;
   }
+
+/* OFERTA */
+
 .oferta {
     height: 80vh;
     margin: 40px;
@@ -209,6 +222,7 @@ h2 {
     font-size: 1.5rem;
     float: right;
 }
+
 @media screen and (max-width: $break-large) {
     .menusection {
         flex-direction: column;

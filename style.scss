@@ -223,6 +223,18 @@ h2 {
     float: right;
 }
 
+/* FOOTER */
+
+footer {
+    height: 50vh;
+    background-color: #c6dada;
+.last {
+    text-align: center;
+    line-height: 50vh;
+    color: #0342b9;
+    font-size: 1.5rem;
+}
+}
 @media screen and (max-width: $break-large) {
     .menusection {
         flex-direction: column;
